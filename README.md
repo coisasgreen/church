@@ -1,52 +1,47 @@
-# Mountain of Fire and Miracle Ministry Church App
+# Church Website & Mobile Application
 
-A comprehensive church website and mobile application for the Mountain of Fire and Miracle Ministry Mid-West Region 92.
+Mountain of Fire and Miracle Ministry Mid-West Region 92
 
-## Features
+## 🙏 Features
 
-### User Features
-- **Service Schedule**: View upcoming services with countdown timers
-- **Testimonies**: Share and read inspiring faith stories
-- **KJV Bible**: Built-in Bible viewer with search functionality
-- **Hymns & Songs**: Search and listen to worship hymns with YouTube integration
-- **Prayer Books**: Access a library of prayer guides and resources
-- **Events Calendar**: Stay updated with church events and programs
-- **Donations**: Secure online giving platform
-- **Notifications**: Real-time updates for new content and events
-- **User Authentication**: Secure registration and login
+### For Users
+- **Home Dashboard** - Welcome page with service countdown and testimonies
+- **Service Schedule** - View upcoming services with countdown timers
+- **Testimonies** - Share and read inspiring stories of faith
+- **KJV Bible** - Complete Bible with search functionality
+- **Hymns & Songs** - Search hymns with YouTube integration
+- **Prayer Books** - Searchable collection of prayer guides
+- **Events** - Upcoming church programs and events
+- **Donations** - Secure online giving platform
+- **About Us** - Church history and information
+- **Contact** - Get in touch with the ministry
 
-### Admin Features
-- **Dashboard**: Overview of church statistics and activities
-- **Service Management**: Create, edit, and delete service schedules
-- **Announcements**: Post important announcements
-- **Prayer Books Management**: Upload and manage prayer books
-- **Hymns Management**: Add and organize hymns
-- **Member Management**: View and manage church members
-- **Settings**: Configure church information
+### For Admins
+- **Admin Dashboard** - Complete management panel
+- **Service Management** - Create and manage service schedules
+- **Announcement Publishing** - Post announcements and updates
+- **Event Management** - Create and manage church events
+- **User Management** - View and manage members
+- **Content Management** - Manage testimonies and resources
+- **Notification System** - Send notifications to members
 
 ### Technical Features
-- **Responsive Design**: Works on mobile, tablet, and desktop
-- **Light/Dark Mode**: Theme toggle for user preference
-- **Progressive Web App**: Installable as a native app
-- **Offline Support**: Works offline with service workers
-- **Real-time Notifications**: Push notifications for important updates
-- **Purple & White Design**: Church-themed color scheme
-- **Fast Performance**: Optimized for quick loading
+- ✅ **Responsive Design** - Works on mobile, tablet, and desktop
+- ✅ **Dark/Light Mode** - Theme toggle for comfortable viewing
+- ✅ **Progressive Web App** - Install as mobile app
+- ✅ **Offline Support** - Service worker caching
+- ✅ **Real-time Notifications** - Stay updated with latest news
+- ✅ **Secure Authentication** - User login and registration
+- ✅ **Search Functionality** - Find content easily
+- ✅ **YouTube Integration** - Stream hymns from YouTube
+- ✅ **Countdown Timers** - Live service countdowns
+- ✅ **Local Storage** - Offline data persistence
 
-## Tech Stack
-
-- **Frontend**: React 18 + TypeScript
-- **Styling**: Tailwind CSS
-- **State Management**: Zustand
-- **Routing**: React Router v6
-- **Icons**: Lucide React
-- **Build Tool**: Vite
-- **PWA**: Service Workers
-
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 16+ and npm
+- Node.js (v16 or higher)
+- npm or yarn
 
 ### Installation
 
@@ -68,133 +63,107 @@ npm run build
 npm run preview
 ```
 
-## Project Structure
+## 📱 Demo Accounts
+
+### Admin Account
+- Email: `admin@mfmm.com`
+- Password: Any password (demo mode)
+- Access: Admin Dashboard
+
+### User Account
+- Email: `user@mfmm.com`
+- Password: Any password (demo mode)
+- Access: All user features
+
+## 📂 Project Structure
 
 ```
 src/
-├── components/        # Reusable components
-│   ├── Navbar.tsx
-│   ├── Footer.tsx
-│   ├── CountdownTimer.tsx
-│   └── NotificationContainer.tsx
-├── pages/            # Page components
-│   ├── Home.tsx
-│   ├── Services.tsx
-│   ├── Testimonies.tsx
-│   ├── Bible.tsx
-│   ├── Hymns.tsx
-│   ├── PrayerBooks.tsx
-│   ├── Events.tsx
-│   ├── Donations.tsx
-│   ├── AdminDashboard.tsx
-│   ├── Login.tsx
-│   ├── Register.tsx
-│   ├── About.tsx
-│   ├── Contact.tsx
-│   └── NotFound.tsx
-├── store/            # Zustand stores
-│   ├── themeStore.ts
-│   ├── authStore.ts
-│   └── notificationStore.ts
-├── services/         # API and utilities
-│   └── serviceWorker.ts
+├── components/       # Reusable UI components
+├── pages/           # Page components
+├── store/           # State management (Zustand)
+├── services/        # API and service functions
+├── utils/           # Utility functions
 ├── App.tsx          # Main app component
 ├── main.tsx         # Entry point
 └── index.css        # Global styles
 ```
 
-## Demo Credentials
+## 🎨 Design System
 
-- **Admin Account**: admin@mfmm.com (any password)
-- **User Account**: user@example.com (any password)
+### Colors
+- **Primary**: Purple (#7e22ce) and White
+- **Secondary**: Slate colors for text
+- **Dark Mode**: Slate gray backgrounds
 
-## Features in Detail
+### Typography
+- Font Family: Segoe UI, system fonts
+- Responsive font sizes
+- Smooth transitions and animations
 
-### Service Schedule
-- View all upcoming church services
-- See speaker names and service descriptions
-- Real-time countdown timer for next service
-- Register for services
-- Admin can create and manage services
+## 🔧 Technology Stack
 
-### Testimonies System
-- Users can share their faith stories
-- Like and interact with testimonies
-- Search and filter testimonies
-- Admin moderation tools
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Tailwind CSS + PostCSS
+- **State Management**: Zustand
+- **Routing**: React Router v6
+- **Build Tool**: Vite
+- **Icons**: Lucide React
+- **PWA**: Service Worker
 
-### KJV Bible
-- Search verses by keyword
-- Adjust font size for readability
-- Navigate between books and chapters
-- Mobile-friendly reading experience
+## 📝 Features Details
 
-### Hymns & Worship
+### Countdown Timer
+Service countdowns update every second, showing days, hours, minutes, and seconds until the next service.
+
+### Notifications
+Real-time notifications for new services, announcements, events, and prayer requests.
+
+### Search Functionality
+- Search prayers books by title and author
 - Search hymns by title
-- View complete lyrics
-- YouTube video integration
-- Listen to hymns directly
-- Category filters
+- Search Bible verses
+- Filter content by categories
 
-### Prayer Resources
-- Categorized prayer books
-- Search functionality
-- Download prayer guides
-- Prayer book recommendations
+### Dark Mode
+Automatic detection of system preference with manual toggle option. Persisted in localStorage.
 
-### Events Management
-- Upcoming events calendar
-- Event details and location
-- RSVP functionality
-- Event categories and filtering
+### Responsive Design
+- Mobile-first approach
+- Breakpoints: sm (640px), md (768px), lg (1024px)
+- Touch-friendly interface
+- Optimized images and assets
 
-### Donations
-- Secure payment processing
-- Multiple donation options
-- Donation category selection
-- Receipt generation
+## 📲 Mobile App
 
-### Admin Dashboard
-- Comprehensive statistics
-- Quick actions panel
-- Member management
-- Content management
-- Settings configuration
+The application can be installed as a PWA:
+1. Open in a modern browser (Chrome, Firefox, Edge, Safari)
+2. Look for "Install" button in browser address bar
+3. Or use "Add to Home Screen" option
+4. Launch as a native app
 
-## Responsive Design
+## 🔐 Security
 
-The application is fully responsive and optimized for:
-- **Mobile**: iOS and Android devices
-- **Tablet**: iPad and Android tablets
-- **Desktop**: Windows, Mac, and Linux
+- Email/password authentication
+- Role-based access control (Admin/User)
+- Secure local storage
+- HTTPS ready
+- Input validation and sanitization
 
-## Accessibility
+## 📞 Contact
 
-- WCAG 2.1 compliance
-- Keyboard navigation support
-- Screen reader friendly
-- High contrast dark mode
-- Readable font sizes
+**Email**: info@mfmm.com
+**Phone**: +234 xxx xxx xxxx
+**Location**: Mid-West Region, Nigeria
 
-## Future Enhancements
+## 📜 License
 
-- [ ] Integration with Firebase for real-time database
-- [ ] Video sermon library
-- [ ] Live streaming capabilities
-- [ ] Member community forum
-- [ ] Prayer request tracking
-- [ ] Tithe and offering management
-- [ ] Member directory
-- [ ] Mobile app stores
+MIT License - feel free to use for personal or commercial projects
 
-## License
+## 🙌 Contributing
 
-This project is licensed under the MIT License.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Support
+---
 
-For issues, suggestions, or feedback, please open an issue on GitHub or contact info@mfmm.com.
-
-## Credits
-
-Developed with ❤️ for Mountain of Fire and Miracle Ministry Mid-West Region 92.
+**Made with ❤️ for Mountain of Fire and Miracle Ministry**
